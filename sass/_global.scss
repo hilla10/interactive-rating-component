@@ -1,0 +1,62 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Overpass',
+    sans-serif;
+    font-size: rem(15);
+    background: $veryDarkBlue;
+    color: $white;
+}
+
+.btn {
+    font-family: 'Overpass',
+    sans-serif;
+    font-size: rem(15);
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    padding: rem(12) rem(25);
+    text-align: center;
+    cursor: pointer;
+    color: $white;
+    background: none;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.btn__orange {
+    background: $orange;
+
+    &:hover {
+        background: $white;
+        color: $orange;
+    }
+}
+
+.footer {
+    display: block;
+    width: 100%;
+    padding: 30px;
+    background-color: $darkBlue;
+    color: $lightGray;
+    text-align: center;
+    font-size: rem(16);
+    font-weight: 700;
+
+    a {
+        color: $white;
+        text-decoration: none;
+        transform: color 0.4s ease;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+}
